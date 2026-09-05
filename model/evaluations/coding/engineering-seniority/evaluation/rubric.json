@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "test_weights": {
+    "T1": 0.10,
+    "T2": 0.15,
+    "T3": 0.15,
+    "T4": 0.20,
+    "T5": 0.20,
+    "T6": 0.20
+  },
+  "category_max": {
+    "correctness": 25,
+    "repository_comprehension": 10,
+    "implementation_quality": 15,
+    "testing": 15,
+    "architecture_design": 15,
+    "production_safety": 10,
+    "engineering_judgment": 5,
+    "scope_discipline": 5
+  },
+  "numeric_bands": {
+    "below_senior": [0, 39.999],
+    "senior": [40, 59.999],
+    "staff": [60, 74.999],
+    "principal": [75, 89.999],
+    "distinguished": [90, 100]
+  },
+  "gates": {
+    "senior": {
+      "minimum_t1_score": 60
+    },
+    "staff": {
+      "minimum_t2_t3_average": 60
+    },
+    "principal": {
+      "minimum_architecture_design": 11,
+      "minimum_production_safety": 7,
+      "minimum_engineering_judgment": 4,
+      "minimum_t4_t5_t6_average": 75,
+      "allow_critical_failure": false
+    },
+    "distinguished": {
+      "minimum_architecture_design": 13,
+      "minimum_production_safety": 9,
+      "minimum_engineering_judgment": 5,
+      "minimum_t5_score": 90,
+      "minimum_t6_score": 90,
+      "requires_system_level_insight": true,
+      "allow_critical_failure": false
+    }
+  },
+  "critical_failure": {
+    "overall_score_cap": 69,
+    "production_safety_test_cap": 3,
+    "maximum_level": "Staff"
+  },
+  "integrity_failure": {
+    "result": "INVALID",
+    "assign_engineering_level": false
+  }
+}

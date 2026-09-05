@@ -1,0 +1,1 @@
+"""Engineering seniority evaluation fixture."""
